@@ -1,0 +1,2394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+   /* font-family: 'Roboto', sans-serif; */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+ /* font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal; */
+
+
+ .roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    
+}
+.classForBodyNotScrolling{
+      overflow: hidden;
+}
+
+.header{
+   width: 100%;
+   height: 65px;
+   position: fixed;
+   z-index: 10;
+   top: 0%;
+   
+}
+.navbar{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    transition: border-color 0.3s ease-in-out;
+}
+.navbar-scrolled {
+  /* border-bottom-color: rgb(56, 56, 56); */
+  border-bottom-color: rgba(56, 56, 56, 0.895);  
+}
+
+.logodiv{
+    width: 170px;
+    height: 100%;
+    /* background-color: rgb(59, 45, 27); */
+     display: flex;
+     align-items: center;
+     padding-left: 2%;
+     color: aliceblue;
+     column-gap: 5px;
+}
+.bars{
+    width: 150px;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 0.9%;
+    column-gap: 13px;
+}
+.logo{
+    width: 40px;
+    height: 41px;
+}
+.logoDesign{
+  width: 43px;
+  height: 44px;
+  transition: background-image 0.5s ease;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 41%;
+  
+}
+
+
+
+
+.logoname{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+  font-size: larger;
+}
+
+.searchlogoDiv{
+    width: 40px;
+    height: 40px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(202, 202, 202);
+    font-size: 140%;
+}
+.moreDivlogoDiv{
+    width: 30px;
+    height: 40px;
+    /* background-color: rgb(157, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(202, 202, 202);
+    font-size: 140%;
+}
+.searchBarLogo{
+  transition-duration: 0.2s;
+}
+.searchBarLogo:active{
+    font-size: 110%;
+    color: white;
+}
+
+
+.quickBox{
+    width: 100%;
+    height: 320px;
+    /* background-color: aqua; */
+    position: relative;
+    top: 75px;
+}
+.quickPicksHeading{
+   width: 100%;
+   height: 19%;
+   /* background-color: red; */
+   padding-right: 0.4%;
+   padding-left: 2%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.mainQuickPicksHeading{
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+}
+.arrowScrollingDiv{
+  width: 66px;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.arrowCircle{
+    width: 23px;
+    height: 23px;
+    border: 0.6px solid rgba(138, 138, 138, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(170, 170, 170, 0.785);
+    font-size: small;
+    transition: 0.2s;
+}
+
+.quickPickScrollingBox{
+    width: 100%;
+    height: 81%;
+    display: flex;
+    /* background-color: beige; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+
+.qiuckPicksScrollingChildDivs{
+    width: 100%;
+    height: 94%;
+    /* background-color: purple; */
+    
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftArrowCircle {
+    color: rgba(138, 138, 138, 0.5); /* gray */
+    border-color: rgba(138, 138, 138, 0.5);
+  }
+  
+  .rightArrowCircle {
+    color: rgba(138, 138, 138, 0.5); /* gray */
+    border-color: rgba(138, 138, 138, 0.5);
+  }
+  
+  .active {
+    color: white !important;
+    border-color: rgb(190, 190, 190);
+    
+  }
+
+  .arrowScrollinside{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clicked {
+    width: 22px;
+    height: 22px;
+    font-size: 70%;
+    background-color: rgba(240, 248, 255, 0.121);
+  }
+  .quickPicksSongsDivBox{
+    width: 94%;
+    height: 21.5%;
+    
+    /* background-color: aqua; */
+    display: flex;
+   
+  }
+  
+
+  .quickPickSongsImg-About{
+    width: 89%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .quickPickSongsImg-About:active{
+    margin-left: 1.5%;
+  }
+  .quickPickThree-Dot{
+    width: 10px;
+    height: 100%;
+    /* background-color: rgb(45, 45, 9); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 238, 238);
+    margin-left: 6%;
+  }
+  
+  .quickPickSongsImg{
+    width: 45px;
+    height: 45px;
+    /* background-color: blanchedalmond; */
+    border-radius: 3px ;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .quickPickSongsAbout{
+    width: 81%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    row-gap: 2px;
+  }
+  .quickPickSongName{
+   font-weight: bold;
+   color: white;
+   font-size: 90%;
+  }
+
+  .quickPickSongArtistName{
+    font-size: 80%;
+    color: rgb(162, 162, 162);
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.three-dot-logo{
+  transition: 0.2s;
+  color: rgb(162, 162, 162);
+}
+  .three-dot-logo:active{
+    font-size: 120%;
+    color: white;
+  }
+
+
+
+
+/* AlbumStyle start....................................................................................................... */
+ .albumDiv{
+    width: 100%;
+    height: 230px;
+    /* background-color: red; */
+    position: relative;
+    top: 90px;
+  }
+  .albumHeading{
+  width: 100%;
+  height: 42px;
+  /* background-color: rgb(0, 78, 141); */
+  color: white;
+  font-weight: bold;
+  font-size: 150%;
+  padding-left: 2%;
+}
+.albumScrollingBox{
+  width: 100%;
+  height: 83%;
+  /* background-color: purple; */
+  display: flex;
+  overflow-x: auto;
+  padding-left: 1.4%;
+  scrollbar-width: none;
+}
+.albumMainBox{
+  width: 163px;
+  height: 180px;
+  /* background-color: rgb(27, 41, 41); */
+  padding-top: 2px;
+  flex-shrink: 0;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-radius: 8px ;
+  padding-bottom: 4px;
+}
+.albumMainBox:active{
+  background-color: rgba(159, 159, 159, 0.105);
+}
+.albumImg{
+  width: 148px;
+  height: 148px;
+  background-color: rgb(21, 21, 21);
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+.albumAbout{
+  font-size: 90%;
+  width: 148px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* albumStyle end....................................................................................................... */
+
+
+/* RecommendedStyle start....................................................................................................... */
+.recoDiv{
+  width: 100%;
+  height: 230px;
+  /* background-color: red; */
+  position: relative;
+  top: 100px;
+}
+.recoHeading{
+width: 100%;
+height: 42px;
+/* background-color: rgb(0, 78, 141); */
+color: white;
+font-weight: bold;
+font-size: 150%;
+padding-left: 2%;
+}
+.recoScrollingBox{
+width: 100%;
+height: 83%;
+/* background-color: purple; */
+display: flex;
+overflow-x: auto;
+padding-left: 1.4%;
+scrollbar-width: none;
+}
+.recoMainBox{
+width: 163px;
+height: 180px;
+/* background-color: rgb(27, 41, 41); */
+padding-top: 2px;
+flex-shrink: 0;
+transition: 0.2s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+color: white;
+border-radius: 8px ;
+padding-bottom: 4px;
+}
+.recoMainBox:active{
+background-color: rgba(159, 159, 159, 0.105);
+}
+.recoImg{
+width: 148px;
+height: 148px;
+background-color: rgba(159, 159, 159, 0.105);
+border-radius: 4px;
+background-size: cover;
+background-position: center;
+}
+.recoAbout{
+font-size: 90%;
+width: 148px;
+text-align: center;
+overflow: hidden;
+white-space: nowrap;
+font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* RecommendedStyle end....................................................................................................... */
+
+
+
+/* ArtistStyle start....................................................................................................... */
+.artistDiv{
+  width: 100%;
+  height: 230px;
+  /* background-color: red; */
+  position: relative;
+  top: 110px;
+}
+.artistHeading{
+width: 100%;
+height: 42px;
+/* background-color: rgb(0, 78, 141); */
+color: white;
+font-weight: bold;
+font-size: 150%;
+padding-left: 2%;
+}
+.artistScrollingBox{
+width: 100%;
+height: 83%;
+/* background-color: purple; */
+display: flex;
+overflow-x: auto;
+padding-left: 1.4%;
+scrollbar-width: none;
+scroll-behavior: smooth;
+}
+.artistMainBox{
+width: 163px;
+height: 180px;
+/* background-color: rgb(27, 41, 41); */
+padding-top: 2px;
+flex-shrink: 0;
+transition: 0.2s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+color: white;
+border-radius: 40px ;
+padding-bottom: 4px;
+}
+.artistMainBox:active{
+background-color: rgba(159, 159, 159, 0.105);
+}
+.artistImg{
+width: 148px;
+height: 148px;
+background-color: rgba(159, 159, 159, 0.105);
+background-size: cover;
+background-position: center;
+border-radius: 50%;
+}
+.artistAbout{
+font-size: 90%;
+width: 148px;
+text-align: center;
+overflow: hidden;
+white-space: nowrap;
+font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* artistStyle end....................................................................................................... */
+
+
+
+
+
+/* BigHitsStyle start....................................................................................................... */
+.BigHitsDiv{
+  width: 100%;
+  height: 230px;
+  /* background-color: red; */
+  position: relative;
+  top: 120px;
+}
+.BigHitsHeading{
+width: 100%;
+height: 42px;
+/* background-color: rgb(0, 78, 141); */
+color: white;
+font-weight: bold;
+font-size: 150%;
+padding-left: 2%;
+}
+.BigHitsScrollingBox{
+width: 100%;
+height: 83%;
+/* background-color: purple; */
+display: flex;
+overflow-x: auto;
+padding-left: 1.4%;
+scrollbar-width: none;
+scroll-behavior: smooth;
+}
+.BigHitsMainBox{
+width: 163px;
+height: 180px;
+/* background-color: rgb(27, 41, 41); */
+padding-top: 2px;
+flex-shrink: 0;
+transition: 0.2s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+color: white;
+border-radius: 8px ;
+padding-bottom: 4px;
+}
+.BigHitsMainBox:active{
+background-color: rgba(159, 159, 159, 0.105);
+}
+.BigHitsImg{
+width: 148px;
+height: 148px;
+background-color: rgba(159, 159, 159, 0.105);
+border-radius: 4px;
+background-size: cover;
+background-position: center;
+}
+.BigHitsAbout{
+font-size: 90%;
+width: 148px;
+text-align: center;
+overflow: hidden;
+white-space: nowrap;
+font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* BigHitsStyle end....................................................................................................... */
+
+
+
+
+
+
+
+
+
+
+/* discoverPicksStyle start.................................................................................................. */
+.discoverPicksDiv{
+  width: 100%;
+  height: 230px;
+  /* background-color: red; */
+  position: relative;
+  top: 130px;
+}
+.discoverPicksHeading{
+width: 100%;
+height: 42px;
+/* background-color: rgb(0, 78, 141); */
+color: white;
+font-weight: bold;
+font-size: 150%;
+padding-left: 2%;
+}
+.discoverPicksScrollingBox{
+width: 100%;
+height: 83%;
+/* background-color: purple; */
+display: flex;
+overflow-x: auto;
+padding-left: 1.4%;
+scrollbar-width: none;
+scroll-behavior: smooth;
+}
+.discoverPicksMainBox{
+width: 163px;
+height: 180px;
+/* background-color: rgb(27, 41, 41); */
+padding-top: 2px;
+flex-shrink: 0;
+transition: 0.2s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+color: white;
+border-radius: 8px ;
+padding-bottom: 4px;
+}
+.discoverPicksMainBox:active{
+background-color: rgba(159, 159, 159, 0.105);
+}
+.discoverPicksImg{
+width: 148px;
+height: 148px;
+background-color: rgba(159, 159, 159, 0.105);
+border-radius: 4px;
+background-size: cover;
+background-position: center;
+}
+.discoverPicksAbout{
+font-size: 90%;
+width: 148px;
+text-align: center;
+overflow: hidden;
+white-space: nowrap;
+font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* discoverPicksStyle end....................................................................................................... */
+
+  
+  
+
+
+/* Bar Div style start here................................................. */
+    .barsDiv{
+      width: 100%;
+      height: 100vh;
+      
+      position: fixed;
+      z-index: 13;
+      top: 0%;
+      right: -100%;
+      transition: right 0.3s ease-in-out;
+      /* overflow-y: auto; */
+      display: flex;
+      justify-content: end;
+    }
+    
+    .barsDivAfterClick{
+      right:0%;
+    }
+
+    .mainbarsDivBox{
+      width: 60%;
+      height: 100%;
+      background-color: black;
+      border-left: 1px solid rgb(56, 56, 56);
+      
+    }
+
+    .mainbarsDivBoxHeader{
+      width: 100%;
+      height: 50px;
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .xmark{
+      font-size: larger;
+      color: rgb(255, 255, 255);
+      font-weight: 100;
+    }
+    .xMarLogokBox{
+      width: 27px;
+      height: 27px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  
+    .xMarLogokBox:active{
+      background-color: rgba(240, 248, 255, 0.121);
+      border: 1px solid rgb(147, 147, 147);
+    }
+
+.backgroundForBody{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.462);
+  transition: right 0.3s ease-in-out;
+  position: fixed;
+  top: 0%;
+  z-index: 11;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.display-block{
+    opacity: 1;
+    visibility: visible;
+  }
+  .barsDivBarsmainBox{
+    width: 100%;
+    height: 60%;
+    /* background-color: #ff044b; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .allBarsDivBarBox{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 15px;
+  }
+  .extraLineDiv{
+    width: 90%;
+    height: 50px;
+   border-bottom: 1px solid rgb(56, 56, 56);
+  }
+
+  .homeLogoDiv{
+    /* background-color: purple; */
+    color: white;
+    font-size: 110%;
+  }
+  .libraryLogoDiv{
+   /* background-color: purple; */
+   color: white;
+   font-size: 110%;
+  }
+  .likedLogoDiv{
+    /* background-color: purple; */
+    color: white;
+   font-size: 110%;
+  }
+  .homeLogoDivText{
+    font-weight: bold;
+    color: white;
+    font-size: 110%;
+  }
+  .libraryLogoDivText{
+    font-weight: bold;
+    color: white;
+    font-size: 110%;
+  }
+  .likedLogoDivText{
+    font-weight: bold;
+    color: white;
+    font-size: 110%;
+  }
+  .selctBarColor{
+    background-color: rgb(28, 28, 28);
+  }
+/* Bar Div style end here................................................. */
+
+
+
+
+
+/* Song PLayer Div Style.......................................................... */
+.songPlayerMainDiv{
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  z-index: 20;
+  transform: translate(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, height 0.2s, opacity 0.3s ease-in-out;
+  background-color: rgb(15, 15, 15);
+}
+
+.songPlayerMainDivForFullScreen{
+   width: 100vw;
+   height: 100vh;
+   background-image: linear-gradient(rgb(24, 24, 24),black,black);
+ }
+
+  
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+}
+.songPlyearBackground{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  
+  backdrop-filter: blur(20px);
+  }
+
+
+
+
+.songPlayerDiv{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+}
+
+.songPlayerDivAfterFullscreen{
+  flex-direction: column;
+  background-image: linear-gradient(rgba(24, 24, 24, 0.362),rgba(0, 0, 0, 0.866),rgba(0, 0, 0, 0.964));
+}
+
+
+
+
+.songPlayerImgAboutDiv{
+  width: 72%;
+  height: 100%;
+  /* background-color: rgb(128, 0, 255); */
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.songPlayerImgAboutDivAfterFullscreen{
+  padding-top: 18%;
+  width: 100%;
+  height: 60%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0%;
+}
+
+
+
+
+.songPlayePlayPauseDiv{
+  width: 28%;
+  height: 100%;
+  /* background-color: rgb(18, 160, 160); */
+  display: flex;
+  justify-content: space-between;
+}
+.songPlayePlayPauseDivAfterFullscreen{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.songPlayerImg{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.songPlayerImgAfterFullscreen{
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  /* flex-shrink: 0; */
+}
+
+
+.songPlayerAbout{
+  width: 79%;
+  height: 100%;
+  /* background-color: red; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3px;
+  padding-right: 3%;
+}
+
+.songPlayerAboutAfterFullscreen{
+  width: 79%;
+  height: 70px;
+  padding-left: 0%;
+  flex-direction: column;
+}
+
+
+
+
+.SongPlayerSongName{
+  width: 100%;
+  /* background-color: darkcyan; */
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.SongPlayerSongNameAfterFullscreen{
+  font-size: 130%;
+  
+}
+
+
+
+
+
+.pinside-Song-name{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+ 
+}
+
+
+
+
+
+.songPlyerArtistName{
+  width: 100%;
+  font-size: 80%;
+  color: rgb(162, 162, 162);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.songPlyerArtistNameAfterFullscreen{
+  
+  font-size: 100%;
+  
+}
+
+.scroll-animation {
+  animation: marquee 10s linear infinite; 
+  padding-left: 10%;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+    
+  }
+  100% {
+    transform: translateX(-100%); 
+    
+  }
+}
+.progress-container{
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(158, 158, 158);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  cursor: pointer;
+}
+.progress-containerAfterfullscreen{
+   height: 2px;
+   top: 67%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 90vw;
+   background-color: rgb(101, 101, 101);
+}
+
+.progress-bar{
+  width: 0%;
+  height: 100%;
+  background-image: linear-gradient(to right,rgb(255, 0, 68),rgb(255, 0, 68),rgb(255, 0, 68),rgb(255, 0, 144));
+  transition: width 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  }
+.progress-barAfterFullScreen{
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      background-color: rgb(255, 0, 76);
+      background-image: linear-gradient(white,white);
+}
+
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  flex-shrink: 0;
+  display: none;
+}
+
+.progress-dotDisplayBlock{
+   display: block;
+}
+
+
+
+.songPlayerClickForFullScreen{
+  width: 70%;
+  height: 90%;
+  /* background-color: rgb(26, 255, 148); */
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+}
+.songPlayerClickForFullScreendisplayNone{
+     display: none;
+}
+
+
+
+.PlayPauseBox{
+  width: 65%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  color: rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.PlayPauseBoxAfterClick{
+  width: 310px;
+  height: 100px;
+  position: absolute;
+  justify-content: space-between;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%);
+  /* background-color: aqua; */
+}
+
+.backwardDiv{
+  font-size: 180%;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+.forwardDiv{
+  font-size: 180%;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
+.backward-forwardLogoaDisplayBlock{
+   display: block;
+}
+
+.backwardLogo:active{
+  color: rgb(112, 112, 112);
+  
+}
+.forwardLogo:active{
+  color: rgb(112, 112, 112);
+}
+
+
+.playDiv{
+  display: none;
+  /* background-color: aliceblue; */
+  font-size: 135%;
+  padding-left: 1.5px;
+}
+.playDivAfterfullscreen{
+  font-size: 180%;
+  padding-left: 3px;
+}
+
+
+.pauseDiv{
+  display: none;
+  font-size: 150%;
+}
+.pauseDivAfterfullscreen{
+  font-size: 200%;
+}
+
+.playPauseDisplayBlock{
+  display: block;
+}
+
+.playpauseAfterClick{
+  background-color: rgb(255, 255, 255);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(20, 20, 20);
+  border-radius: 50%;
+  /* padding-top: 3px; */
+}
+
+
+.audioTag{
+  position: absolute;
+  visibility: hidden;
+}
+
+
+
+
+.time-container{
+  /* background-color: green; */
+  position: absolute;
+  top: 69.5%;
+  left: 50%;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(190, 190, 190);
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+  transform: translate(-50%,-50%);
+  font-size: 90%;
+  visibility: hidden;
+  /* background-color: rgba(0, 255, 255, 0.349); */
+}
+
+.time-containerDisplayBlock{
+  visibility: visible;
+}
+
+.chevron-down{
+  position: absolute;
+  font-size: 140%;
+  color: rgb(190, 190, 190);
+  top: 8%;
+  left: 3%;
+  display: none;
+}
+.chevron-downdisplay-block{
+   display: block;
+}
+
+
+
+.visualizer {
+  position: absolute;
+  /* background-color: rgb(255, 170, 127); */
+  top: 61%;
+  left: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 20px; 
+  width: 19px;  
+  gap: 1px;
+  visibility: hidden;    
+}
+.visualizerAfterFullScreen{
+  visibility: visible;
+}
+
+
+.visualizerbar {
+  width: 3px;
+  height: 4px;
+  background-color: #ff044b;
+ }
+.visualizerbarifSongPlaying{
+  animation: bounce 1.6s infinite ease-in-out;
+}
+
+.visualizerbar:nth-child(1) {
+  animation-delay: 0s;
+}
+.visualizerbar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.visualizerbar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0%, 100% {
+    height: 6px;
+  }
+  25% {
+    height: 80%;
+    background-color: #ff04e2;
+  }
+  50% {
+    height: 40%;
+    background-color: #ff044b;
+  }
+  75% {
+    height: 80%;
+    background-color: #ff044b;
+  }
+}
+
+
+
+.repeat-repeat1Box{
+  width: 50px;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  color: rgb(211, 211, 211);
+  visibility: hidden;
+  padding-top: 4px;
+}
+
+.repeatDiv{
+  width: 30px;
+  height: 30px;
+  font-size: 110%;
+  /* background-color: green; */
+  display: none;
+}
+.repeat-1Div{
+  /* background-color: blue; */
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+}
+.repeatDiv-repeat-1DivDisplayBlock{
+   display: block;
+}
+
+
+
+
+
+.circle-plusDiv{
+  width: 50px;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: rgb(211, 211, 211);
+  font-size: 110%;
+  visibility: hidden;
+  padding-top: 4px;
+}
+.circle-pluslogoDiv{
+  background-color: none;
+}
+.circle-checklogoDiv{
+  
+  /* background-color: green; */
+  color: rgb(255, 255, 255);
+}
+.circle-pluslogoDiv-main{
+  display: none;
+}
+.circle-checklogoDivmain{
+  display: none;
+}
+.circle-plus-checklogoDiv-maindisplayBlock{
+   display: block;
+}
+
+.circle-plus-checklogoDivDisplayBlock{
+  display: block;
+}
+.circle-plusLogo:active{
+  color: rgb(255, 255, 255);
+}
+
+.classvisibility{
+  visibility: visible;
+}
+
+
+.backgroundVideo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-color: red; */
+  display: none;
+}
+
+.backgroundVideoDisplayBlock{
+  display: block;
+}
+
+
+/* Heart style start.......................................................... */
+.heartBox{
+  width: 35%;
+  height: 100%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heartBoxAfterfullscreen{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 60%;
+  right: 7%;
+}
+
+
+.heartWithBackground{
+  font-size: 160%;
+  color: rgb(255, 0, 68);
+  display: none;
+}
+.heartWithoutBackground{
+  font-size: 160%;
+  color: rgb(122, 122, 122);
+  display: none;
+}
+.heartDisplayBlock{
+  display: block;
+}
+
+.heartAnimation{
+  animation: animationForHeart;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+@keyframes animationForHeart{
+   0% {
+     font-size: 160%;
+   }
+   50% {
+    font-size: 200%;
+   }
+   100%{
+    font-size: 160%;
+   }
+}
+/* Heart style end.......................................................... */
+
+
+
+
+
+
+
+/* playlistMainDiv style start here...................................................... */
+.playlistMainDiv{
+ width: 100vw;
+ height:100vh;
+ background-color: rgb(0, 0, 0);
+ position: fixed;
+ top: 0%;
+ z-index: 0;
+ visibility: hidden;
+ opacity: 0;
+  transition: visibility 0.2s,opacity 0.2s ease-in-out;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.playlistMainDivVisibility-visible{
+  visibility: visible;
+  opacity: 1;
+  z-index: 11;
+}
+
+.displayNone{
+   visibility: hidden;
+}
+
+.playlistMainArrowDiv{
+  width: 100%;
+  height: 40px;
+  /* background-color: rgba(0, 0, 255, 0.33); */
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  padding-left: 2%;
+}
+.playlistMainDiv-arrow-leftLogoDiv{
+  width: 40px;
+  height: 100%;
+  background-color: #ff04e200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playlistMainDiv-arrow-leftLogo{
+  color: rgb(217, 217, 217);
+  font-size:130%;
+  transition-duration: 0.2s;
+}
+.playlistMainDiv-arrow-leftLogo:active{
+  color: rgb(255, 255, 255);
+  font-size:145%;
+}
+.playlistMainImgDiv{
+  width: 100%;
+  height: 240px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.mainplaylistImg{
+  width: 200px;
+  height: 200px;
+  /* background-color: #ff04e2; */
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.playlistMainDivNameDiv{
+  width: 100%;
+  /* background-color: green; */
+  padding-left: 3%;
+}
+.playlistMainDivName{
+  width: 70%;
+  color: white;
+  font-size: 150%;
+  /* background-color: bisque; */
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+.mainPlayListContainer{
+  width: 100%;
+  /* background-color: #ff044b; */
+  margin-top: 20px;
+}
+.songDivMainContainer{
+  width: 100%;
+  height: 60px;
+  /* background-color: yellow; */
+  
+  margin-bottom: 4px;
+  display: flex;
+}
+.songsDivPlaylistimgabout{
+  height: 100%;
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  transition-duration: 0.3s;
+}
+.songsDivPlaylistimgabout:active{
+  margin-left: 5px;
+}
+.songsDivPlaylistThreeDotDiv{
+  width: 5%;
+  height: 100%;
+  /* background-color: #0432ff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.songsDivPlaylistimg{
+  width: 45px;
+  height: 45px;
+  /* background-color: rgb(62, 124, 0); */
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+.songsDivPlaylistabout{
+  height: 100%;
+  width: 80%;
+  /* background-color: #ff9b04; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4px;
+}
+.songsDivPlaylistaboutSongName{
+  width: 100%;
+  
+  /* background-color: rgb(65, 43, 0); */
+  font-weight: bold;
+  color: white;
+  font-size: 90%;
+}
+.songsDivPlaylistaboutArtistName{
+  width: 100%;
+  font-size: 80%;
+  color: rgb(162, 162, 162);
+  font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  /* background-color: rgb(42, 28, 0); */
+}
+.extraDiv{
+  width: 100%;
+  height: 100px;
+}
+.playlistMainArrowDivscroll{
+  background-color: rgb(0, 0, 0);
+  /* backdrop-filter: blur(10px); */
+}
+.playlistPlaybutton{
+  width: 60px;
+  height: 60px;
+  /* background-color: rgb(138, 0, 34); */
+  background-image: linear-gradient(to right,rgb(226, 0, 42),rgb(229, 2, 119));
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  right: 17%;
+  color: rgb(28, 28, 28);
+}
+.playlistPlaybuttonsticky{
+  position: fixed;
+  top: 10px;
+  right: 17%;
+}
+
+.mainplaylistImg{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.playlistMainDivScrollSongNameDiv{
+  height: 100%;
+  width: 85%;
+  /* background-color: red; */
+  color: white;
+  font-size: 150%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+.playlistMainDivScrollSongNameDivvisibility-visible{
+    visibility: visible;
+    opacity: 1;
+}
+.mainplaylistMainDivScrollSongNameDiv{
+  flex-shrink: 0;
+}
+/* playlistMainDiv style end here...................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mainDivAfterClickThreeDotLogo style start here................................................ */
+.mainDivAfterClickThreeDotLogo{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: -100vh;
+  z-index: 21;
+  transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ff04e2; */
+}
+.mainDivAfterClickThreeDotLogoAfterdotClick{
+  bottom: 0vh;
+}
+.DivAfterClickThreeDotLogo{
+  width: 100%;
+  height: 40%;
+  background-color: black;
+  border-top: 1px solid rgb(56, 56, 56);
+}
+.DivAfterClickThreeDotLogoGoBack{
+  width: 100%;
+  height: 60%;
+  /* background-color: aqua; */
+}
+.DivAfterClickThreeDotLogoClosingLogoMainDiv{
+  width: 100%;
+  height: 55px;
+  /* background-color: #cb033c; */
+  display: flex;
+  align-items: center;
+  padding-left: 1.7%;
+  
+}
+.DivAfterClickThreeDotLogoClosingLogoMainDivXmark{
+   font-size: larger;
+}
+
+.divForDivAfterClickThreeDotLogoClosingLogoMainDivXmark{
+  width: 26px;
+  height: 26px;
+  /* background-color: #ff04e2f0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  
+}
+.divForDivAfterClickThreeDotLogoClosingLogoMainDivXmark:active{
+  border: 1px solid rgb(77, 77, 77);
+}
+.mainDivAfterClickThreeDotLogoMainSongDiv{
+  width: 100%;
+  height: 55px;
+  /* background-color: #ff04e2; */
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+.MoreOptionLogoDivLine{
+  width: 100%;
+  height: 2px;
+  /* background-color: rgb(38, 152, 4); */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.mainMoreOptionLogoDivLine{
+  width: 90% ;
+  height: 0.5px;
+  background-color: rgb(56, 56, 56);
+}
+.DivAfterClickThreeDotLogoSongImg{
+  width: 46px;
+  height: 46px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+}
+.DivAfterClickThreeDotLogoSongAbout{
+  width: 70%;
+  height: 100%;
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2px;
+  padding-left: 10px;
+}
+.DivAfterClickThreeDotLogoSongAboutSongName{
+  width: 100%;
+  /* background-color: #ff044b; */
+  overflow-wrap: break-word;
+  font-weight: bold;
+    color: white;
+    font-size: 90%;
+}
+.DivAfterClickThreeDotLogoSongAboutArtistName{
+  width: 100%;
+  /* background-color: #54ff04; */
+  overflow-wrap: break-word;
+  font-size: 80%;
+  color: rgb(162, 162, 162);
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.AlbumthreeDotbackground{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.462);
+    transition: right 0.3s ease-in-out;
+    position: fixed;
+    top: 0%;
+    z-index: 19;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.AlbumthreeDotbackgrounddisplay-block {
+  opacity: 1;
+  visibility: visible;
+}
+.mainDivAfterClickThreeDotLogoforNotScrolling{
+  overflow: hidden;
+}
+.mainDivAfterClickThreeDotLogoMoreOptionDiv{
+  width: 100%;
+  height: 65px;
+  /* background-color: rgb(10, 66, 47); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10%;
+  margin-top: 15px;
+}
+.MoreOptionLogoDiv{
+  width: 200px;
+  height: 30px;
+  /* background-color: #ff044b; */
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.saveTolibrary{
+  font-weight: bold;
+  color: white;
+  font-size: 90%;
+}
+.ThreeDotcircle-checklogo-circle-pluslogoDiv{
+  width: 28px;
+  height: 100%;
+  /* background-color: rgb(41, 112, 112); */
+  display: flex;
+  align-items: center;
+  font-size: 130%;
+}
+.ThreeDotDivheartWithoutBackground-heartWithBackgroundDiv{
+  width: 28px;
+  height: 100%;
+  /* background-color: rgb(41, 112, 112); */
+  display: flex;
+  align-items: center;
+  font-size: 130%;
+}
+.ThreeDotcircle-heartWithoutBackgroundDiv{
+  color: rgb(199, 199, 199);
+  display: none;
+}
+.ThreeDotcircle-heartWithBackgroundDiv{
+  display: none;
+  color: rgb(199, 199, 199);
+}
+.ThreeDotcircle-heartDislplay-block{
+  display: block;
+}
+
+.ThreeDotcircle-checklogo{
+  color: rgb(199, 199, 199);
+}
+.ThreeDotcircle-pluslogo{
+  color: rgb(199, 199, 199);
+}
+.ThreeDotcircle-checklogoDiv{
+  display: none;
+}
+.ThreeDotcircle-pluslogoDiv{
+  display: none;
+}
+.ThreeDotcircleDisplayBlock{
+   display: block;
+}
+/* mainDivAfterClickThreeDotLogo style start here................................................ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* library div style start here .....................................................*/
+  .libraryDivpage{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    z-index: 12;
+    overflow: auto;
+  }
+  .libraryDivpageVisibility-visible{
+     visibility: visible;
+     opacity: 1;
+  }
+  .libraryDivpageBackMainDiv{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0, 0, 0);
+    /* background-color: red; */
+    position: fixed;
+    top: 0%;
+    padding-left: 1%;
+  }
+  .libraryDivpage-arrow-leftLogoDiv{
+    width: 30px;
+    height: 100%;
+    /* background-color: #ff04e2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .libraryDivpage-arrow-leftLogo{
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    transition-duration: 0.2s;
+  }
+  .libraryDivpage-arrow-leftLogo:active{
+    font-size: 180%;
+  }
+  .libraryDivpageSongsMainDiv{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40%;
+  }
+  .librarynoSongImg{
+    color: white;
+    width: 100%;
+    height: 500px;
+    /* background-color: #2e7612c7; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    row-gap: 10px;
+    display: none;
+  }
+  .librarynoSongImgFofDisplayFlex{
+    display: flex;
+  }
+  .noSongYetMore{
+    color: rgb(142, 142, 142);
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .noSongYet{
+    font-weight: bold;
+    color: white;
+    font-size: 120%;
+  }
+
+  .libraryDivsMainContainer{
+    width: 100%;
+    height: 60px;
+    /* background-color: yellow; */
+    margin-bottom: 4px;
+    display: flex;
+  }
+
+  .librarysDivsPlaylistimgabout{
+    height: 100%;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    transition-duration: 0.3s;
+  }
+  .librarysDivsPlaylistimgabout:active{
+    margin-left: 5px;
+  }
+  .librarysDivslistThreeDotDiv{
+    width: 5%;
+    height: 100%;
+    /* background-color: #0432ff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .librarysDivsPlaylistimg{
+    width: 45px;
+    height: 45px;
+    /* background-color: rgb(62, 124, 0); */
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+  }
+  .librarysDivsPlaylistabout{
+    height: 100%;
+    width: 80%;
+    /* background-color: #ff9b04; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+  }
+  .librarysDivsPlaylistaboutSongName{
+    width: 100%;
+    /* background-color: rgb(65, 43, 0); */
+    font-weight: bold;
+    color: white;
+    font-size: 90%;
+  }
+  .librarysDivsPlaylistaboutArtistName{
+    width: 100%;
+    font-size: 80%;
+    color: rgb(162, 162, 162);
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* background-color: rgb(42, 28, 0); */
+  }
+  .libraryDivpagExtra{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+  }
+   
+/* library div style end here .....................................................*/
+
+
+
+
+
+
+
+/* Liked div style start here .....................................................*/
+ .likedDivpage{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+  z-index: 12;
+  overflow: auto;
+ }
+ .likedDivpageVisibility-visible{
+  visibility: visible;
+  opacity: 1;
+ }
+ .likedDivpageBackMainDiv{
+  width: 100%;
+  height: 55px;
+  background-color: rgb(0, 0, 0);
+  /* background-color: red; */
+  position: fixed;
+  top: 0%;
+  padding-left: 1%;
+ }
+ .likedDivpage-arrow-leftLogoDiv{
+  width: 30px;
+    height: 100%;
+    /* background-color: #ff04e2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .likedDivpage-arrow-leftLogo{
+  color: rgb(255, 255, 255);
+  font-size: 130%;
+  transition-duration: 0.2s;
+ }
+ .likedDivpageSongsMainDiv{
+   width: 100%;
+   /* background-color: red; */
+   margin-top: 40%;
+ }
+ .likednoSongImg{
+  color: white;
+  width: 100%;
+  height: 500px;
+  /* background-color: #2e7612c7; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  row-gap: 10px;
+  display: none;
+ }
+ .likednoSongImg-display-flex{
+  display: flex;
+ }
+ .likedDivnoSongYet{
+  font-weight: bold;
+  color: white;
+  font-size: 120%;
+ }
+ .likedDivnoSongYetMore{
+  color: rgb(142, 142, 142);
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+ }
+ .likedDivpage-arrow-leftLogo:active{
+  font-size: 180%;
+}
+.likednoSongImgFofDisplayFlex{
+  display: flex;
+}
+
+.likedDivsMainContainer{
+  width: 100%;
+  height: 60px;
+  /* background-color: yellow; */
+  margin-bottom: 4px;
+  display: flex;
+}
+.likedsDivsPlaylistimgabout{
+  height: 100%;
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  transition-duration: 0.3s;
+}
+.likedsDivsPlaylistimgabout:active{
+  margin-left: 5px;
+}
+.likedsDivslistThreeDotDiv{
+  width: 5%;
+  height: 100%;
+  /* background-color: #0432ff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.likedsDivsPlaylistimg{
+  width: 45px;
+    height: 45px;
+    /* background-color: rgb(62, 124, 0); */
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+.likedsDivsPlaylistabout{
+  height: 100%;
+    width: 80%;
+    /* background-color: #ff9b04; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+}
+.likedsDivsPlaylistaboutSongName{
+  width: 100%;
+    /* background-color: rgb(65, 43, 0); */
+    font-weight: bold;
+    color: white;
+    font-size: 90%;
+}
+.likedsDivsPlaylistaboutArtistName{
+  width: 100%;
+    font-size: 80%;
+    color: rgb(162, 162, 162);
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* background-color: rgb(42, 28, 0); */
+}
+.likedDivpagExtra{
+  width: 100%;
+  height: 80px;
+  /* background-color: red; */
+}
+ 
+/* Liked div style end here .....................................................*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* songAddedNotificationMainDiv style start here......................................... */
+
+.songAddedNotificationMainDiv{
+  width: 100vw;
+  /* height: 40px; */
+  /* background-color: red; */
+  position: fixed;
+  bottom: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+.songAddedNotificationMainDivforFullScreenSongPlayerDiv{
+  bottom: 10px;
+}
+.songAddedRemovedNotificationDiv{
+  background-color: rgba(255, 255, 255, 0.755);
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0; 
+  display: flex;
+  align-items: center;
+  font-size: 80%;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-left: 30px;
+  overflow: auto;
+  scrollbar-width: none;
+  backdrop-filter: blur(3px);
+}
+.songAddedRemovedNotificationDivAfter{
+    width: 300px;
+    height: 40px;
+    opacity: 1;
+}
+/* songAddedNotificationMainDiv style end here......................................... */
+
+
+
+
+
+
+
+
+
+
+/* search div style start here ............................................................................*/
+.searchMainDiv{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0%;
+  z-index: 19;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.searchMainDivVisibility-Visible{
+  visibility: visible;
+  opacity: 1;
+}
+.searchMainDivInputMainDiv{
+  width:100%;
+  height: 80%;
+  display: flex;
+ justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.searchDivpage-arrow-leftLogoDiv{
+  color: white;
+  font-size: 140%;
+  padding-left: 3%;
+  padding-top: 3%;
+  transition: 0.2s;
+}
+.searchDivpage-arrow-leftLogoDiv:active{
+  font-size: 160%;
+}
+.searchMainDivInputMainDiv{
+  /* background-color: red; */
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.Coming-Soon{
+   color: white;
+}
+.Coming-SoonAbout{
+  color: rgb(136, 136, 136);
+  text-align: center;
+  padding-top: 10px;
+}
+/* search div style end here ...............................................................................*/
+
+
+
+
+
+/* footer style start here....................................................................................... */
+.footer{
+  width: 100%;
+  /* height: 500px; */
+  /* background-color: red; */
+  margin-top: 170px;
+  padding-left: 2%;
+  padding-bottom: 90px;
+}
+.footerBoxes{
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footerHeading{
+  font-weight: bold;
+  color: white;
+  font-size: 110%;
+  /* background-color: rgb(102, 0, 255); */
+  padding-bottom:5px;
+}
+
+
+.quickLinks{
+  margin-bottom: 50px;
+}
+.footerLine{
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2%;
+}
+.mainfooterLine{
+  width: 95%;
+  height: 0.5px;
+  background-color: rgba(92, 93, 96, 0.286);
+}
+
+.footerBars{
+  color: rgb(122, 122, 122);
+  font-size: 100%;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  
+}
+.fa-envelope{
+  padding-right: 7px;
+  font-size: 110%;
+  color: rgb(165, 165, 165);
+}
+.fa-phone{
+  padding-right: 7px;
+  font-size: 110%;
+  color: rgb(165, 165, 165);
+}
+.FollowUsIcons{
+  /* background-color: red; */
+  display: flex;
+  column-gap: 11px;
+}
+.footerBarsFollowUs{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(43, 43, 43, 0.649);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 120%;
+  border-radius: 50%;
+  
+}
+.footerBarsFollowUs:active{
+  background-color: rgba(0, 146, 243, 0.267);
+}
+
+
+
+/* footer style end here....................................................................................... */
+
+
+
+
+
+
+  .notresponsiveDiv {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: black; /* Black background */
+    color: rgb(183, 183, 183); /* White text for contrast */
+    display: flex; /* Center the text */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it stays on top of all content */
+    padding-left: 3%;
+    padding-right: 3%;
+    display: none;
+ }
+
+ @media (min-width: 650px) {
+  .notresponsiveDiv {
+      display: flex;
+  }
+}
+ 
