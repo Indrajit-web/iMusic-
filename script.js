@@ -1631,6 +1631,13 @@ document.querySelector(".chevron-down").addEventListener("click",()=>{
       playlistname: "TopEnglishSongsPlaylist",
       backgroundVideo: "Video_10778348-c25e-46f5-9308-70421841c1b8.mp4",
     },
+    {
+      title: "How Long",
+      src: "Charlie_Puth_-_How_Long__Lyrics_(256k).mp3",
+      img: "How_Long_Charlie_Puth_Single_Cover.png",
+      artist: "Charlie Puth",
+      playlistname: "TopEnglishSongsPlaylist",
+    },
   ];
   //Top English Songs playlist end here------------------------------------->
 // Songs playlists end......................................................................................................
