@@ -1541,6 +1541,13 @@ document.querySelector(".chevron-down").addEventListener("click",()=>{
       artist: "Atif Aslam",
       playlistname: "BollywoodCentralPlaylist",
     },
+   {
+      title: "Tu Hain Toh Main Hoon (From-Sky Force)",
+      src: "https://ac.cf.saavncdn.com/666/cc4042115969711b4a0a7a1741625195_160.mp4?Expires=1738299617&Signature=Urfj2bm9w0YIxZA55Hj-7A1Z6H-tiItdYPBe4-eJ87y0~xSZqqmt10f-g1USK4tpGa2K2eEqhkenmIK8ls3uCqmUBUYyeXkxqtt5XrbO9RelCIk4lpyezMCckNAmK-18VOXEmRoZVAyRHV103K1VhWwN-dUMlp-daKaqk8Ik6rbFOmSxYAvYRR74P4YMssx2gct5b6TYNIHK5tame0xzDmcXmtqHEgV~P46PwSjSU7XVODigpsFwhWgVUa6PUdPpTEN-nUhyPhjnd69GGvRn-hwuUYHxaJPgTV1KtfL43xbnrg7DP1VqlqHEesBrBFjTqZQGzKO-Mz1chrS2QiZBrw__&Key-Pair-Id=APKAJB334VX63D3WJ5ZQ",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEUASEpZaM6SxSh_djGO0B3zjTQpWakUwBG98OwUM7Y4Wu-h6VaQ3wvtMZltCpubWG88&usqp=CAU",
+      artist: "Tanishk Bagchi, Arijit Singh,",
+      playlistname: "BollywoodCentralPlaylist",
+    },
   ];
     
   //Bollywood central playlist end here------------------------------------->
@@ -1645,6 +1652,7 @@ document.querySelector(".chevron-down").addEventListener("click",()=>{
       artist: "Justin Bieber",
       playlistname: "TopEnglishSongsPlaylist",
     },
+   
   ];
   //Top English Songs playlist end here------------------------------------->
 // Songs playlists end......................................................................................................
