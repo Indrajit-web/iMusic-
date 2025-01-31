@@ -1638,6 +1638,13 @@ document.querySelector(".chevron-down").addEventListener("click",()=>{
       artist: "Charlie Puth",
       playlistname: "TopEnglishSongsPlaylist",
     },
+   {
+      title: "Sorry",
+      src: "Justin_Bieber_-_Sorry__Lyrics_(256k).mp3",
+      img: "artworks-000135333648-1lmjbw-t500x500",
+      artist: "Justin Bieber",
+      playlistname: "TopEnglishSongsPlaylist",
+    },
   ];
   //Top English Songs playlist end here------------------------------------->
 // Songs playlists end......................................................................................................
