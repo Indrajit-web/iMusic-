@@ -1641,7 +1641,7 @@ document.querySelector(".chevron-down").addEventListener("click",()=>{
    {
       title: "Sorry",
       src: "Justin_Bieber_-_Sorry__Lyrics_(256k).mp3",
-      img: "artworks-000135333648-1lmjbw-t500x500",
+      img: "artworks-000135333648-1lmjbw-t500x500.jpg",
       artist: "Justin Bieber",
       playlistname: "TopEnglishSongsPlaylist",
     },
